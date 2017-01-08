@@ -1,0 +1,16 @@
+.hamburger__menu{
+  display: none;
+  ul{
+    display: block;
+    a{
+      display: block;
+    }
+  }
+  .nav__link{
+    display: block;
+  }
+}
+
+.menu--active{
+  display: block;
+}

@@ -1,0 +1,21 @@
+.price-calc#price-calc
+  .container
+    .price-calc__title Калькулятор стоимости
+    form(id="form_paper", method="", action="" class='price-calc__form')
+      .select-warapper
+        select#company
+          option(value="000") Производитель
+      .select-warapper  
+        select#models
+          option(value="000") Модель телефона
+      .select-warapper    
+        select#repair_type
+          option(value="000") Тип ремонта
+      
+      .price-calc__price
+      
+      .price-calc__hint
+        = 'В калькуляторе нет нужной услуги? В сервисном центре мы сделаем дианостику бесплатно и предложим вам варианты ремонта или апгрейда'
+        
+      input(type="submit" value="оставить заявку")
+        

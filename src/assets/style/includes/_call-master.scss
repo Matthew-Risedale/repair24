@@ -1,0 +1,35 @@
+.call-master{
+  background-image: url(../img/order-master.jpg);
+  background-size: cover;
+  overflow: hidden;
+  &__title{
+    text-align: center;
+    font-family: 'LatoBold', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  &__noproblem{
+    color: #fff;
+    font-family: "RobotoLight", sans-serif;
+    text-align: center;
+    margin-top: 40px;
+  }
+  &__button{
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    background: transparent;
+    padding: 12px 25px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: $gradient;
+    border-image-slice: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+  }
+}

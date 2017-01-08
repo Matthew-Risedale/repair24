@@ -1,0 +1,80 @@
+.footer{
+  position: relative;
+  font-family: "RobotoRegular", sans-serif;
+  color: #fff;
+  background: $dark_gray;
+  font-size: 13px;
+  margin-top: 40px;
+  overflow: inherit;
+  &__link-to-top{
+    position: absolute;
+    cursor: pointer;
+    background: $dark_gray;
+    width: 60px;
+    line-height: 25px;
+    left: calc( 50% - 30px);
+    top: -20px;
+    text-align: center;
+    color: lighten($gray_text, 30%);
+    z-index: 5;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    overflow: hidden;
+    > div{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__gadgets{
+    position: relative;
+    display: none;
+    span{
+      position: absolute;
+      top: -30px;
+      color: lighten($gray_text, 30%);
+      font-size: 14px;
+      width: 150px;
+    }
+    ul{
+      margin: 0;
+      padding: 0;
+    }
+    li{
+      list-style-type: none;
+      &:hover{
+        color: $hover_blue;
+      }
+    }
+  }
+  &__phone{
+    li{
+      list-style-type: none;
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+      &:hover{
+        color: $hover_blue;
+      }
+    }
+  }
+  @media (min-width: $screen-md){
+    &__gadgets{
+      display: block;
+    }
+    .container{
+      > div{
+        margin-top: 60px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+  @media (min-width: $screen-lg){
+  }
+}

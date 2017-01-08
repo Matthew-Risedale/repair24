@@ -1,0 +1,13 @@
+.feedback#feedback
+  .feedback-title.container Отзывы
+  .owl-carousel.feedback__carousel
+    - for(var i = 0; i < 4; i++) {
+      .slide
+        .container
+          .slide-feedback-photo.left
+            .border
+              img(src="assets/img/customer-photo.jpg", alt="фото клиента")
+          .right
+            .slide-feedback-name Елена Григорьева
+            .slide-feedback-text Пришла к закрытию сервисного центра, у телефона не работал микрофон. Выручили за 15 минут! Не пришлось откладывать ту проблему на завтра. В общем, все на высшем уровне, большое спасибо!
+    - }

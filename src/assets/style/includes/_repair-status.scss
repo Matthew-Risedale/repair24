@@ -1,0 +1,21 @@
+.repair-status{
+  a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    padding-left: 20px;
+    &:hover{
+      color: $hover_blue;
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url('../img/spritesheet.png');
+      background-position: 22px 0px;
+      top: -2px;
+      left: -2px;
+    }
+  }
+}

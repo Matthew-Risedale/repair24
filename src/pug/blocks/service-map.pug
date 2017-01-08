@@ -1,0 +1,43 @@
+-
+  var addressList = [
+    {
+      station: 'Приморская',
+      street: "Ул. Одоевского д.31А",
+      phone: '8 931 245 56 56',
+      lineColor: 'green',
+    }, {
+      station: "Василеостровская",
+      street: "8-ая линия В.О. д.48",
+      phone: '8 931 124 45 77',
+      lineColor: 'green',
+    },
+    {
+      station: "Невский проспект",
+      street: "ул. Думская д.11",
+      phone: '8 931 144 255 81 64',
+      lineColor: 'blue',
+    },
+    {
+      station: "Спортивная",
+      street: "ул. Зверинская д.32",
+      phone: '8 921 275 66 76',
+      lineColor: 'purple',
+    },
+  ];
+  
+mixin address-card(address)
+  .address
+    .station(class = address.lineColor)= address.station
+    .street= address.street
+    .phone= address.phone
+  
+.service-map#service-map
+  .container
+    .service-map__title Cервисные центры
+    .service-map__wrapper
+      .service-map__address
+        input(type="text" placeholder='Поиск по улице или метро')
+        
+        for address in addressList
+          +address-card(address)
+      #map

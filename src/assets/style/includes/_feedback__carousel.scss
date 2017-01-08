@@ -1,0 +1,83 @@
+.feedback{
+  overflow: hidden;
+  .slide .container{
+    width: 70%;
+  }
+  &-title{
+    font-family: "LatoBold", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .slide{
+    &-feedback-photo{
+      .border{
+        background: $gradient;
+        width: 134px;
+        height: 134px;
+        margin: 0 auto;
+        border-radius: 50%;
+      }
+      img{
+        margin: 20px auto;
+        padding-top: 2px;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+      }
+    }
+    &-feedback-name{
+      font-family: "RobotoLight", sans-serif;
+      font-size: 23px;
+      font-weight: bold;
+    }
+    &-feedback-text{
+      font-family: "RobotoRegular", sans-serif;
+      margin-bottom: 50px;
+      text-align: justify;
+    }
+    @media (min-width: $screen-md){
+      height:250px;
+      .container{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .right{
+        width: 70%;
+      }
+      .left{
+        width: 30%;
+      }
+      &-feedback-name{
+        margin-top: 50px;
+      }
+      &-feedback-text{
+        font-family: "RobotoRegular", sans-serif;
+        margin-bottom: 50px;
+      }
+    }
+  }
+//navigation arrows feedback
+.owl{
+  &-previous, &-nxt{
+    top: -170px;
+  }
+  &-previous{
+    left: 10%;
+  }
+  &-nxt{
+    left: 87%;
+  }
+}
+
+//navigation dots feedback
+  .owl-dot{
+    border-color: $hover_blue;
+    &.active{
+      border:none;
+    }
+  }
+
+}

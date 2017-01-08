@@ -1,0 +1,25 @@
+.container{
+  padding: 0px 15px;
+  width: 90%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  @media (min-width: $screen-lg){
+    padding: 0px 25px;
+  }
+}
+
+
+.input {
+background-image: $gradient;
+padding: 2px;
+  input{
+  color: #fff;
+  display: block;
+  outline: none;
+  box-sizing: border-box;
+  &::placeholder{
+    color: #fff;
+    text-align: center;
+  }
+  }
+}

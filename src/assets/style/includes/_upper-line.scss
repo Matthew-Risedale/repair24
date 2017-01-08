@@ -1,0 +1,52 @@
+.upper-line{
+  height: 30px;
+  background-color: $gray;
+  font-size: 13px;
+  overflow: hidden;
+  font-family: "RobotoRegular";
+
+  .container{
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+  }
+  &__city-select{
+    width: 60%;
+    select{
+      background: none;
+      outline: none;
+      color: #fff;
+      border: none;
+      font-size: 13px;
+      margin-top: 6px;
+    }
+    option{
+      color: #000;
+    }
+  }
+  &__phone{
+    width: 40%;
+    text-align: right;
+    color: #fff;
+    font-family: 'RobotoBold', sans-serif;
+    margin-top: 6px;
+
+  }
+  &__repair-status{
+    margin-top: 6px;
+    display: none;
+  }
+  @media (min-width: $screen-md) {
+    &__city-select{
+      width: 20%;
+    }
+    &__phone{
+      width: 50%;
+    }
+    &__repair-status{
+      width: 20%;
+    }
+  }
+}
+
+@import "repair-status";

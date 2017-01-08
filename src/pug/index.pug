@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie=edge")
+  link(rel="stylesheet", href="assets/style/main.css")
+  link(rel="icon" type="image/png" href="assets/img/favicon.png")
+  title repair 24
+body
+  include blocks/header.pug  
+  main
+    include blocks/promo.pug
+    include blocks/gadget-type.pug
+    include blocks/price-calc.pug
+    include blocks/service-map.pug
+    include blocks/call-master.pug
+    include blocks/feedback.pug
+  include blocks/footer.pug
+
+
+script(type='text/javascript' src='assets/js/jquery-3.1.1.min.js')
+script(type='text/javascript' src='assets/js/owl.carousel.min.js')
+script(type='text/javascript' src='assets/js/main.js')
+script(type='text/javascript' src='assets/js/hamburger.js')
+script(type='text/javascript' src='assets/js/price-calc.js')
+script(type='text/javascript' src='assets/js/scroll.js')
+
+  
+//GoogleMap javascript API
+script(async defer src='https://maps.googleapis.com/maps/api/js?key=AIzaSyANKJtFhVmqi1TBhvm3jG4nVeTRoai1Ys0&callback=initMap')
+script(type='text/javascript' src='assets/js/map.js')
+
+
+  
+  

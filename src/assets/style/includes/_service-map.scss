@@ -1,0 +1,102 @@
+.service-map{
+  overflow: hidden;
+  &__title{
+    font-family: "LatoBold", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  &__address{
+    width: 100%;
+    input{
+      width: 100%;
+      padding: 15px;
+      padding-left: 30px;
+      outline: none;
+      background: lighten($gray, 75%);
+      border: none;
+    }
+    .address{
+      box-sizing: border-box;
+      border: 2px solid #fff;
+      padding: 20px 50px;
+      font-family: "RobotoRegular", sans-serif;
+      &:hover{
+        border-width: 2px;
+        border-style: solid;
+        border-image: $gradient;
+        border-image-slice: 1;
+      }
+      .station{
+        text-transform: uppercase;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        &::before{
+          position: absolute;
+          content: '';
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          left: -20px;
+          top: 5px;
+        }
+      }
+      .street{
+        display: inline-block;
+
+      }
+      .phone{
+
+      }
+    }
+  }
+  #map{
+    width: 100%;
+    height: 300px;
+  }
+
+  @media (min-width: $screen-lg){
+    &__address{
+      width: 40%;
+    }
+    #map{
+      width: 60%;
+      height: 500px;
+    }
+  }
+
+
+
+  .red{
+    &:before{
+      background: red;
+    }
+  }
+  .blue{
+    &:before{
+      background: $gradient_blue;
+    }
+  }
+  .green{
+    &:before{
+      background: $gradient_green;
+    }
+  }
+  .purple{
+    &:before{
+      background: purple;
+    }
+  }
+  .orange{
+    &:before{
+      background: orange;
+    }
+  }
+}

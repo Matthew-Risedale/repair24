@@ -1,0 +1,25 @@
+.header{
+  background-color: $dark_gray;
+}
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  @media (min-width: $screen-lg){
+      height: inherit;
+  }
+}
+.header__logo{
+  width: 15%;
+}
+.header__search{
+  width: 12%;
+  margin-top: 3px;
+}
+
+@import "upper-line";
+@import "main-logo";
+@import "main-nav";
+@import "search";
+@import "header-gadgets";

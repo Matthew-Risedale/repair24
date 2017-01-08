@@ -1,0 +1,39 @@
+.logo{
+  background: url('../img/spritesheet.png');
+  background-position: -5px -5px;
+  height: 37px;
+  width: 99px;
+  display: flex;
+  align-items: center;
+}
+
+// .logo {
+//   &__link{
+//     display: flex;
+//     align-items: center;
+//     text-decoration: none;
+//     color: #000;
+//   }
+//
+//   &__svg{
+//     width: 47px;
+//     height: 36px;
+//   }
+//
+//   .page-footer &__svg{
+//     fill: #fff;
+//   }
+//
+//   &__link{
+//     font-size: 24px;
+//     font-weight: bold;
+//
+//     .page-footer &{
+//       color: $main-second;
+//     }
+//   }
+//
+//   &__text{
+//     padding-left: 15px;
+//   }
+// }

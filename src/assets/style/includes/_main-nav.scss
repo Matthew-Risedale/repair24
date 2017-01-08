@@ -1,0 +1,49 @@
+
+@import "main-nav__hamburger";
+@import "main-nav__hamburger-menu";
+
+.nav{
+  position: relative;
+  ul{
+    display: none;
+  }
+  &__link{
+    margin: 0;
+    display: inline-block;
+    font-size: 0;
+    list-style-type: none;
+    a{
+      // width: 100%;
+      text-align: center;
+      padding: 25px 25px;
+      text-transform: uppercase;
+      display: inline-block;
+      color: #fff;
+      text-decoration: none;
+      font-family: "RobotoBold", sans-serif;
+      font-size: 12.5px;
+      outline: none;
+      &:hover{
+        background-color: $hover_blue;
+      }
+    }
+  }
+}
+
+.nav__burger{
+  position: absolute;
+  top: -27px;
+  left: -100px;
+}
+@media (min-width: $screen-lg){
+  .nav__burger{
+    display: none;
+  }
+  .nav ul {
+    display: block;
+    position: relative;
+  }
+  .hamburger__menu{
+    display: none;
+  }
+}

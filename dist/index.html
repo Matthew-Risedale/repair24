@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="stylesheet" href="assets/style/main.css"/>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png"/>
+  <title>repair 24</title>
+</head>
+<body>
+  <header class="header">
+    <div class="upper-line">
+      <div class="container">
+        <div class="upper-line__city-select">
+          <select>
+            <option>Санкт-Петербург</option>
+            <option>Москва</option>
+          </select>
+        </div>
+        <div class="upper-line__phone">8 800 000 00 00</div>
+        <div class="upper-line__repair-status">
+          <div class="repair-status"><a href="#">Проверить статус ремонта</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="container main-header">
+      <div class="logo header__logo"></div>
+      <nav class="nav header__nav">
+        <ul>
+          <li class="nav__link"><a href="#promo">о нас</a></li>
+          <li class="nav__link"><a href="#gadget-type">что мы ремонтируем</a></li>
+          <li class="nav__link"><a href="#service-map">сервисные центры</a></li>
+          <li class="nav__link"><a href="#price-calc">стоимость ремонта</a></li>
+          <li class="nav__link"><a href="#feedback">отзывы</a></li>
+        </ul>
+        <div class="hamburger hamburger--collapse nav__burger">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="search header__search input">
+        <input type="text" placeholder="Поиск"/>
+      </div>
+    </div>
+    <div class="hamburger__menu container">
+      <ul>
+        <li class="nav__link"><a href="#promo">о нас</a></li>
+        <li class="nav__link"><a href="#gadget-type">что мы ремонтируем</a></li>
+        <li class="nav__link"><a href="#service-map">сервисные центры</a></li>
+        <li class="nav__link"><a href="#price-calc">стоимость ремонта</a></li>
+        <li class="nav__link"><a href="#feedback">отзывы</a></li>
+      </ul>
+    </div>
+    <div class="header-gadgets">
+      <div class="container">
+        <div class="header-gadgets__item">Телефоны</div>
+        <div class="header-gadgets__item">Планшеты</div>
+        <div class="header-gadgets__item">Ноутбуки</div>
+        <div class="header-gadgets__item">Смартфоны</div>
+        <div class="header-gadgets__item">Умные часы</div>
+        <div class="header-gadgets__item">Наушники</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="promo" id="promo">
+      <div class="owl-carousel promo-carousel">
+        <div class="slide">
+          <div class="container">
+            <div class="slide-promo-title">Работаем 24/7 <br> во всех районах СПб</div>
+            <div class="slide-promo-subtitle">Отдайте телефон в ремонт в сервисном центре на работе и заберите его у дома на следующий день</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-promo-title">Работаем 24/7 <br> во всех районах СПб</div>
+            <div class="slide-promo-subtitle">Отдайте телефон в ремонт в сервисном центре на работе и заберите его у дома на следующий день</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-promo-title">Работаем 24/7 <br> во всех районах СПб</div>
+            <div class="slide-promo-subtitle">Отдайте телефон в ремонт в сервисном центре на работе и заберите его у дома на следующий день</div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-promo-title">Работаем 24/7 <br> во всех районах СПб</div>
+            <div class="slide-promo-subtitle">Отдайте телефон в ремонт в сервисном центре на работе и заберите его у дома на следующий день</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gadget-type" id="gadget-type">
+      <div class="container">
+        <div class="gadget-type__title">Что мы ремонтируем:</div>
+        <div class="gadget-type__items">
+          <div class="gadget-type__item">
+            <div class="player">аудиоплееры</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="smart-watch">умные часы</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="tablet">планшеты</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="smartphone">смартфоны</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="laptop">ноутбуки</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="headphones">наушники</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="ebook">электронные книги</div>
+          </div>
+          <div class="gadget-type__item">
+            <div class="phone">телефоны</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="price-calc" id="price-calc">
+      <div class="container">
+        <div class="price-calc__title">Калькулятор стоимости</div>
+        <form class="price-calc__form" id="form_paper" method="" action="">
+          <div class="select-warapper">
+            <select id="company">
+              <option value="000">Производитель</option>
+            </select>
+          </div>
+          <div class="select-warapper"> 
+            <select id="models">
+              <option value="000">Модель телефона</option>
+            </select>
+          </div>
+          <div class="select-warapper">   
+            <select id="repair_type">
+              <option value="000">Тип ремонта</option>
+            </select>
+          </div>
+          <div class="price-calc__price"></div>
+          <div class="price-calc__hint">В калькуляторе нет нужной услуги? В сервисном центре мы сделаем дианостику бесплатно и предложим вам варианты ремонта или апгрейда
+          </div>
+          <input type="submit" value="оставить заявку"/>
+        </form>
+      </div>
+    </div>
+    <div class="service-map" id="service-map">
+      <div class="container">
+        <div class="service-map__title">Cервисные центры</div>
+        <div class="service-map__wrapper">
+          <div class="service-map__address">
+            <input type="text" placeholder="Поиск по улице или метро"/>
+                <div class="address">
+                  <div class="station green">Приморская</div>
+                  <div class="street">Ул. Одоевского д.31А</div>
+                  <div class="phone">8 931 245 56 56</div>
+                </div>
+                <div class="address">
+                  <div class="station green">Василеостровская</div>
+                  <div class="street">8-ая линия В.О. д.48</div>
+                  <div class="phone">8 931 124 45 77</div>
+                </div>
+                <div class="address">
+                  <div class="station blue">Невский проспект</div>
+                  <div class="street">ул. Думская д.11</div>
+                  <div class="phone">8 931 144 255 81 64</div>
+                </div>
+                <div class="address">
+                  <div class="station purple">Спортивная</div>
+                  <div class="street">ул. Зверинская д.32</div>
+                  <div class="phone">8 921 275 66 76</div>
+                </div>
+          </div>
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="call-master">
+      <div class="container">
+        <div class="call-master__title">Нет времени приехать в сервисный центр?</div>
+        <div class="call-master__noproblem">Не беда, закажите вызов мастера!</div>
+        <div class="call-master__button-wrapper">
+          <input class="call-master__button" type="submit" value="Вызвать мастера"/>
+        </div>
+      </div>
+    </div>
+    <div class="feedback" id="feedback">
+      <div class="feedback-title container">Отзывы</div>
+      <div class="owl-carousel feedback__carousel">
+        <div class="slide">
+          <div class="container">
+            <div class="slide-feedback-photo left">
+              <div class="border"><img src="assets/img/customer-photo.jpg" alt="фото клиента"/></div>
+            </div>
+            <div class="right">
+              <div class="slide-feedback-name">Елена Григорьева</div>
+              <div class="slide-feedback-text">Пришла к закрытию сервисного центра, у телефона не работал микрофон. Выручили за 15 минут! Не пришлось откладывать ту проблему на завтра. В общем, все на высшем уровне, большое спасибо!</div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-feedback-photo left">
+              <div class="border"><img src="assets/img/customer-photo.jpg" alt="фото клиента"/></div>
+            </div>
+            <div class="right">
+              <div class="slide-feedback-name">Елена Григорьева</div>
+              <div class="slide-feedback-text">Пришла к закрытию сервисного центра, у телефона не работал микрофон. Выручили за 15 минут! Не пришлось откладывать ту проблему на завтра. В общем, все на высшем уровне, большое спасибо!</div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-feedback-photo left">
+              <div class="border"><img src="assets/img/customer-photo.jpg" alt="фото клиента"/></div>
+            </div>
+            <div class="right">
+              <div class="slide-feedback-name">Елена Григорьева</div>
+              <div class="slide-feedback-text">Пришла к закрытию сервисного центра, у телефона не работал микрофон. Выручили за 15 минут! Не пришлось откладывать ту проблему на завтра. В общем, все на высшем уровне, большое спасибо!</div>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="container">
+            <div class="slide-feedback-photo left">
+              <div class="border"><img src="assets/img/customer-photo.jpg" alt="фото клиента"/></div>
+            </div>
+            <div class="right">
+              <div class="slide-feedback-name">Елена Григорьева</div>
+              <div class="slide-feedback-text">Пришла к закрытию сервисного центра, у телефона не работал микрофон. Выручили за 15 минут! Не пришлось откладывать ту проблему на завтра. В общем, все на высшем уровне, большое спасибо!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__link-to-top">наверх</div>
+    <div class="container"> 
+      <div class="footer__copyright">© «Команда Р», 2006-2016</div>
+      <div class="footer__social"><span>О компании <br></span><span>Мы в социальных сетях</span><a href=""></a><a href=""></a><a href=""></a></div>
+      <div class="footer__gadgets"> <span>Что мы ремонтируем</span>
+        <ul>
+          <li>Ноутбуки </li>
+          <li>Смартфоны</li>
+          <li>Планшеты</li>
+          <li>Умные часы</li>
+          <li>Электронные книги</li>
+          <li>Наушники</li>
+          <li>Мобильные телефоны</li>
+        </ul>
+      </div>
+      <div class="footer__phone">8 800 000 00 00
+        <ul>
+          <li><a href="">Заказать звонок</a></li>
+          <li><a href="">Обратная связь</a></li>
+          <li><a href="">Часто задаваемые вопросы</a></li>
+        </ul>
+      </div>
+      <div class="footer__repair-status"> 
+        <div class="repair-status"><a href="#">Проверить статус ремонта</a></div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="assets/js/hamburger.js"></script>
+<script type="text/javascript" src="assets/js/price-calc.js"></script>
+<script type="text/javascript" src="assets/js/scroll.js"></script>
+<!--GoogleMap javascript API-->
+<script async="async" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANKJtFhVmqi1TBhvm3jG4nVeTRoai1Ys0&amp;callback=initMap"></script>
+<script type="text/javascript" src="assets/js/map.js"></script>
